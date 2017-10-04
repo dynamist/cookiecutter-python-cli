@@ -1,0 +1,11 @@
+{
+    "full_name": "Name Nameson",
+    "email": "hello@example.tld",
+    "repo_site": "github.com",
+    "repo_username": "username",
+    "app_title": "Hello World",
+    "repo_name": "{{cookiecutter.app_title|replace(' ', '')|lower}}",
+    "url": "https://{{cookiecutter.repo_site}}/{{cookiecutter.repo_username}}/{{cookiecutter.repo_name}}/",
+    "version": "0.0.1",
+    "year": "2018"
+}
