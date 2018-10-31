@@ -13,10 +13,6 @@ with open(os.path.join(HERE, 'cookiecutter.json'), 'r') as fp:
 COOKIECUTTER_SETTINGS['repo_name'] = COOKIECUTTER_SETTINGS['app_title'].replace(' ','').lower()
 COOKIE = os.path.join(HERE, COOKIECUTTER_SETTINGS['repo_name'])
 
-from pprint import pprint
-pprint(COOKIE)
-pprint(COOKIECUTTER_SETTINGS)
-
 @task
 def build(ctx):
     """Build the cookiecutter."""
